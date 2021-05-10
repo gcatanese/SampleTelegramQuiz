@@ -1,0 +1,5 @@
+python-telegram-bot==12.7
+requests==2.22.0
+pyfiglet==0.8.post1
+python-dotenv===0.17.1
+
