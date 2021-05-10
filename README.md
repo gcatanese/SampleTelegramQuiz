@@ -1,7 +1,7 @@
 # SampleTelegramQuiz
 Sample of Telegram Quiz in Python
 
-Find here the source code of the [Advanced Telegram Chatbots: features that make a difference](https://towardsdatascience.com/bring-your-telegram-chatbot-to-the-next-level-c771ec7d31e4) 
+Find here the source code of the [Creating a Telegram Chatbot Quiz with Python](https://towardsdatascience.com/bring-your-telegram-chatbot-to-the-next-level-c771ec7d31e4) 
 article.
 
 ### Table of Contents 
