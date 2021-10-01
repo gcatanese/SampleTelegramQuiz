@@ -1,4 +1,6 @@
 import time
+import datetime
+
 import pyfiglet
 import logging
 import logging.config
@@ -75,6 +77,14 @@ def help_command_handler(update, context):
     update.message.reply_text("Type /start")
 
 
+def new_member(update, context):
+    logging.info(f"new_member : {update}")
+
+
+    add_typing(update, context)
+    add_text_message(update, context, f"New user")
+
+
 def main_handler(update, context):
     logging.info(f"update : {update}")
 
@@ -85,6 +95,15 @@ def main_handler(update, context):
         # reply
         add_typing(update, context)
         add_text_message(update, context, f"You said: {user_input}")
+
+
+        # ban member
+        # m = context.bot.kick_chat_member(
+        #     chat_id="-1001572091573", #get_chat_id(update, context),
+        #     user_id='1041389347',
+        #     timeout=int(time.time() + 86400))
+        #
+        # logging.info(f"kick_chat_member : {m}")
 
 
 def poll_handler(update, context):
@@ -210,6 +229,8 @@ def main():
 
     # message handler
     dp.add_handler(MessageHandler(Filters.text, main_handler))
+
+    dp.add_handler(MessageHandler(Filters.status_update.new_chat_members, new_member))
 
     # suggested_actions_handler
     dp.add_handler(
