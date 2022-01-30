@@ -4,6 +4,8 @@ Sample of Telegram Quiz in Python
 Find here the source code of the [Creating a Telegram Chatbot Quiz with Python](https://towardsdatascience.com/creating-a-telegram-chatbot-quiz-with-python-711a43c0c424) 
 article.
 
+![Alt text](splash.png?raw=true "World Capitals Quiz")
+
 ### Table of Contents 
   * [Setup](#setup)
   * [Run on Local](#run-on-local)
